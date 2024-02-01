@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  final void Function() switchScreen;
+
+  const Home(this.switchScreen, {super.key});
 
   @override
   Widget build(context) {
@@ -24,7 +26,7 @@ class Home extends StatelessWidget {
           height: 20,
         ),
         FilledButton(
-          onPressed: () {},
+          onPressed: switchScreen,
           style: const ButtonStyle(
             backgroundColor:
                 MaterialStatePropertyAll(Color.fromARGB(255, 121, 0, 214)),
