@@ -43,9 +43,7 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomLeft,
             ),
           ),
-          child: Center(
-            child: activeScreen,
-          ),
+          child: activeScreen,
         ),
       ),
     );
