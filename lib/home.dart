@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
   final void Function() switchScreen;
@@ -16,9 +17,9 @@ class Home extends StatelessWidget {
             width: 200,
             height: 300,
           ),
-          const Text(
+          Text(
             'Learn Flutter the Fun Way!',
-            style: TextStyle(
+            style: GoogleFonts.ubuntu(
               color: Colors.white,
               fontSize: 24,
             ),
@@ -26,13 +27,15 @@ class Home extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          FilledButton(
+          FilledButton.icon(
             onPressed: switchScreen,
-            style: const ButtonStyle(
-              backgroundColor:
-                  MaterialStatePropertyAll(Color.fromARGB(255, 121, 0, 214)),
+            style: FilledButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 121, 0, 214),
+              shape: BeveledRectangleBorder(
+                  borderRadius: BorderRadius.circular(0)),
             ),
-            child: const Text('Start Quiz'),
+            icon: const Icon(Icons.arrow_right_alt),
+            label: const Text('Start Quiz'),
           ),
         ],
       ),
