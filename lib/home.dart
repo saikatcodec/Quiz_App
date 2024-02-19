@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
           FilledButton.icon(
             onPressed: switchScreen,
             style: FilledButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 121, 0, 214),
+              backgroundColor: const Color.fromARGB(255, 7, 0, 214),
               shape: BeveledRectangleBorder(
                   borderRadius: BorderRadius.circular(0)),
             ),
