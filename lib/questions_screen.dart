@@ -50,7 +50,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20),
-            ...question.getShuffleAnswers().map(
+            ...question.shuffleAnswers.map(
               (answer) {
                 return AnswerButton(
                   name: answer,
